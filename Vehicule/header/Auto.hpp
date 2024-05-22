@@ -6,15 +6,10 @@
 class Auto : public Vehicule
 {
 	public:
-		void conduire()const;
-		void afficher()const;
+		void conduire() const;
 
 		Auto();
 		~Auto();
-	
-	private:
-		
-
 };
 
 #endif
