@@ -6,7 +6,9 @@
 class Moto : public Vehicule
 {
 	public:
-		void conduire();
+		Moto();
+		~Moto();
+		void conduire()const;
 };
 
 #endif

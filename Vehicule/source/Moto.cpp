@@ -4,9 +4,29 @@
 #include "../header/Moto.hpp"
 #include <iostream>
 
-void Moto::conduire()
+/***********************************/
+
+Moto::Moto()
 {
-	std::cout << "Conduire une motoo " << std::endl;
+	std::cout << "Création d'un moto" << std::endl;
 }
+
+/***********************************/
+
+void Moto::conduire() const
+{
+	std::cout 	<< conducteur << " conduit une moto de marque " << marque 
+				<< " qui a " << nombreRoue << " roues avec une vitesse de "
+				<< vitesse << " km/h" << std::endl;
+}
+
+/***********************************/
+
+Moto::~Moto()
+{
+	std::cout << "Destruction d'un moto" << std::endl;
+}
+
+/***********************************/
 
 #endif

@@ -6,12 +6,23 @@
 class Vehicule
 {
 	public:
-		virtual void conduire() = 0;
+		virtual void conduire() const = 0;
+
 		void setMarque(std::string marque);
-		std::string getMarque();
-		
-	private:
+		void setNombreRoue(int nombreRoue);
+		void setVitesse(float vitesse);
+		void setConducteur(std::string );
+
+		std::string getMarque() const;
+		std::string getConducteur() const;
+		int getNombreRoue() const;
+		float getVitesse() const;
+
+	protected:
 		std::string marque;
+		int nombreRoue;
+		float vitesse;
+		std::string conducteur;
 };
 
 #endif
