@@ -6,8 +6,8 @@ int main()
 {
 	Auto *automobile = new Auto;
 
-	automobile->setConducteur("Remi");
-	automobile->setMarque("Kia");
+	automobile->setConducteur("Balita");
+	automobile->setMarque("Karenjy");
 	automobile->setNombreRoue(4);
 	automobile->setVitesse(90.5);
 
@@ -25,7 +25,7 @@ int main()
 	moto->setNombreRoue(2);
 
 	moto->conduire();
-	
+
 	delete moto;
 
 	return 0;

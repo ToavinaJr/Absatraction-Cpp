@@ -6,6 +6,13 @@
 
 /***********************************/
 
+void Vehicule::setConducteur(std::string conducteur)
+{
+	this->conducteur = conducteur;
+}
+
+/***********************************/
+
 void Vehicule::setMarque(std::string marque)
 {
 	this->marque = marque;
@@ -44,13 +51,6 @@ int Vehicule::getNombreRoue() const
 float Vehicule::getVitesse() const
 {
 	return vitesse;
-}
-
-/***********************************/
-
-void Vehicule::setConducteur(std::string conducteur)
-{
-	this->conducteur = conducteur;
 }
 
 /***********************************/
